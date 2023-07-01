@@ -4,6 +4,6 @@ import Instruments.Instrument;
 
 public interface IPlay {
 
-    String playSounds();
+    String playSounds(); //each instrument child class with play their own sound.
 
 }

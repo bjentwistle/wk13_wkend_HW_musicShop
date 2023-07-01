@@ -10,7 +10,10 @@ public class Piano extends Instrument implements IPlay {
         this.style = style;
     }
     public String playSounds(){
-        return "Strumming";
+        return "Plink plonk!";
     }
 
+    public String getStyle() {
+        return style;
+    }
 }
