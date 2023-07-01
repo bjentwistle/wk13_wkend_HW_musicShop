@@ -5,7 +5,7 @@ import Interfaces.ISell;
 public class Peripheral implements ISell {
     private String name;
     private double wholesalePrice; //Price the shop buys the items for.
-    private double retailPrice; //price sold to customers in the store
+    private double retailPrice; //Price sold to customers in the store
 
     public Peripheral(String name, double wholesalePrice, double retailPrice){
         this.name = name;

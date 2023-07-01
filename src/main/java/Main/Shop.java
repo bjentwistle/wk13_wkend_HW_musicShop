@@ -9,15 +9,17 @@ import java.util.ArrayList;
 
 public class Shop {
 
-    ArrayList<Instrument> instruments;
-    ArrayList<Peripheral> peripherals;
+    ArrayList<ISell> stock;
 
-    public Shop(ArrayList<Instrument> instruments, ArrayList<Peripheral> peripherals) {
-        this.instruments = instruments;
-        this.peripherals = peripherals;
+    public Shop(ArrayList<ISell> stock ){
+        this.stock = stock;
     }
 
-    public void addInstruments(Instrument instrument){
-        instruments.add(instrument);
+    public void addStock(Object object){
+        stock.add((ISell) object);
+    }
+
+    public int getStock() {
+        return stock.size();
     }
 }
