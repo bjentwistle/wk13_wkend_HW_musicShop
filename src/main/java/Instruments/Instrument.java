@@ -1,9 +1,8 @@
 package Instruments;
 
-import Interfaces.IPlay;
 import Interfaces.ISell;
 
-public abstract class Instrument implements ISell{
+public abstract class Instrument implements ISell {
 
     private String name;
     private double wholesalePrice; //Price the shop buys the items for.
@@ -28,7 +27,7 @@ public abstract class Instrument implements ISell{
     public String getName(){
         return name;
     }
-    public String isSold() {
+    public String isSold() {System.out.printf("Sold instrument - " + name + " for £%.2f", retailPrice);
         return "Cha Ching!";
     }
     public double calculateMarkup(){ //Calculate the profit margin of the item

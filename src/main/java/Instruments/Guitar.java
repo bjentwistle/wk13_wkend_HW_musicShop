@@ -1,7 +1,6 @@
 package Instruments;
 
 import Interfaces.IPlay;
-import Interfaces.ISell;
 
 public class Guitar extends Instrument implements IPlay {
 

@@ -1,25 +1,30 @@
 package Main;
 
-import Instruments.Instrument;
-import Interfaces.IPlay;
 import Interfaces.ISell;
-import Peripherals.Peripheral;
 
 import java.util.ArrayList;
 
-public class Shop {
+public class Shop{
 
-    ArrayList<ISell> stock;
+    private final ArrayList<ISell> stock = new ArrayList<>();
 
-    public Shop(ArrayList<ISell> stock ){
-        this.stock = stock;
+    //no constructor is needed. Starting with an empty stock array.
+    public void addStock(ISell sellable){stock.add(sellable);}
+
+    public void removeStock(ISell sellable) {
+        stock.remove(sellable);
     }
 
-    public void addStock(Object object){
-        stock.add((ISell) object);
-    }
+    public double getProfit() {
+        double profit = 0;
+        for (ISell sellable : stock) {
+            double subProfit = sellable.calculateMarkup();
+            profit += subProfit;
+     }
+        return profit;
 
-    public int getStock() {
-        return stock.size();
     }
+    public int getStockSize() {return stock.size();}
+
+
 }
