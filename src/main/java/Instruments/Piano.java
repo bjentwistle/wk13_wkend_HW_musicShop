@@ -1,5 +1,4 @@
 package Instruments;
-
 import Interfaces.IPlay;
 
 public class Piano extends Instrument implements IPlay {

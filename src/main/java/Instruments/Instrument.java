@@ -1,5 +1,4 @@
 package Instruments;
-
 import Interfaces.ISell;
 
 public abstract class Instrument implements ISell {

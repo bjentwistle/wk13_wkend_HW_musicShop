@@ -1,13 +1,10 @@
 package Main;
-
 import Interfaces.ISell;
-
 import java.util.ArrayList;
 
 public class Shop{
 
     private final ArrayList<ISell> stock = new ArrayList<>();
-
     //no constructor is needed. Starting with an empty stock array.
     public void addStock(ISell sellable){stock.add(sellable);}
 
